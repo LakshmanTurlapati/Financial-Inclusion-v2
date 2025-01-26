@@ -13,10 +13,7 @@ class _LandingPageState extends State<LandingPage> {
   bool _isPasswordVisible = false;
   bool _isLoading = false;
 
-  // Provide your actual User Pool ID and App Client ID here.
-  // The library will automatically parse the region from your Pool ID.
   final CognitoUserPool _userPool = CognitoUserPool(
-    // e.g. "us-west-2_ABC123" from your AWS console
     'us-west-2_uI4aGzwR4',
     '51r7jkaqdvbq9hrh9068jcr5i7',
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'landing.dart';
 import 'dashboard.dart';
 
@@ -11,7 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Financial Inclusion',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primaryColor: const Color(0xFFF4792A),   // Set the orange color
+        textTheme: GoogleFonts.interTextTheme(    // Apply Inter globally
+          Theme.of(context).textTheme,
+        ),),
       initialRoute: '/',
       routes: {
         '/': (context) => LandingPage(),
