@@ -1,0 +1,35 @@
+name: financial_inclusion
+description: A Flutter project with Cognito sign-in
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.1
+  font_awesome_flutter: ^10.6.0
+  shared_preferences: ^2.2.2
+
+  amazon_cognito_identity_dart_2: ^3.8.0
+  cupertino_icons: ^1.0.5
+  vector_math: ^2.1.4  # For math utilities
+  google_fonts: ^4.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_svg: ^1.0.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/c_icon.png
+    - assets/FI_dark.png
+    - assets/FI_light.png 
+    - assets/temp.json
+    - assets/capitalone.svg
+    - assets/
